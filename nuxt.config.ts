@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:8080',
       appName: process.env.NUXT_PUBLIC_APP_NAME || 'PersonalBlog',
+      icpNumber: process.env.NUXT_PUBLIC_ICP_NUMBER || '',
     },
   },
 
@@ -45,6 +46,7 @@ export default defineNuxtConfig({
       ],
     },
     pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'layout', mode: 'out-in' },
   },
 
   // Nitro server config

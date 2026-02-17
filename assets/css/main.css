@@ -1,7 +1,7 @@
 /* Page transition animations */
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-enter-from,
@@ -10,7 +10,51 @@
   transform: translateY(10px);
 }
 
+/* Layout transition animations */
+.layout-enter-active,
+.layout-leave-active {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.layout-enter-from,
+.layout-leave-to {
+  opacity: 0;
+  transform: scale(0.98);
+}
+
 /* Global styles */
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  min-height: 100vh;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
