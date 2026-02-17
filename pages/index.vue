@@ -31,6 +31,13 @@
             <div class="nav-desc">探索技术文章</div>
           </div>
         </NuxtLink>
+        <NuxtLink to="/home" class="nav-card">
+          <div class="nav-icon">📊</div>
+          <div class="nav-text">
+            <div class="nav-title">数据</div>
+            <div class="nav-desc">技能与项目</div>
+          </div>
+        </NuxtLink>
         <NuxtLink to="/about" class="nav-card">
           <div class="nav-icon">👤</div>
           <div class="nav-text">
