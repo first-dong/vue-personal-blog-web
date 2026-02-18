@@ -1,0 +1,17 @@
+# PersonalBlog robots.txt
+# 禁止搜索引擎爬取管理后台相关路由
+
+User-agent: *
+Disallow: /admin-portal
+Disallow: /admin
+Disallow: /admin/*
+
+# 允许爬取公开内容
+Allow: /
+Allow: /articles
+Allow: /articles/*
+Allow: /resume
+Allow: /home
+
+# 网站地图（未来可配置）
+# Sitemap: https://yourdomain.com/sitemap.xml
